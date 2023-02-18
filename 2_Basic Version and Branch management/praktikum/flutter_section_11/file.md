@@ -1,1 +1,1 @@
-Ini adalah folder ke-dua, Basic Version and Branch Management
+https://docs.google.com/document/d/1BhItfSLto3FzXxYdAdZUGJZjbhJdXwJAPgYWPLBlm0Q/edit?usp=sharing
