@@ -1,5 +1,4 @@
-Rangkuman yang berkaitan dengan Fundamental Dart
-Membahas Basic Dart Programming (Apa itu dart?, fungsi main, fungsi komentar pada program, macam-macam variabel dan tipe data, dan operator)
+Rangkuman yang berkaitan dengan Basic Dart Programming (Apa itu dart?, fungsi main, fungsi komentar pada program, macam-macam variabel dan tipe data, dan operator)
 1. Dart merupakan bahasa pemrograman yang dirancang untuk membuat sebuah aplikasi yang dapat digunakan untuk multiplatform
 2. Fungsi main merupakan perintah yang dijalankan untuk pertama kali dapat berupa void ataupun int
 3. Fungsi komentar pada program adalah memberi catatan pada program agar tidak bingung dan lupa apabila membuka programnya lagi
