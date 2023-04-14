@@ -1,1 +1,4 @@
-Bagian ini untuk rangkuman yang berkaitan dengan UI Testing
+Rangkuman yang berkaitan dengan UI Testing
+1. Widget Testing: Testing pada level widget, dimana setiap widget diuji secara terpisah dengan cara memasukkan input dan memverifikasi output. Dalam Flutter, widget testing dapat dilakukan menggunakan package flutter_test dan widget_tester.
+2. Integration Testing: Testing pada level integrasi, dimana beberapa widget atau fitur diuji secara bersamaan untuk memastikan bahwa semuanya berfungsi dengan baik dalam satu layar atau halaman. Dalam Flutter, integration testing dapat dilakukan dengan menggunakan package flutter_driver.
+3. Automated UI Testing: Testing pada level user interface, dimana pengujian dilakukan dengan mensimulasikan interaksi yang dilakukan oleh pengguna pada aplikasi. Dalam Flutter, automated UI testing dapat dilakukan dengan menggunakan package flutter_gherkin dan integration_testing.
