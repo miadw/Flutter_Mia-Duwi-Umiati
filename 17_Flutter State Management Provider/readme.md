@@ -1,1 +1,5 @@
-Bagian ini untuk rangkuman yang berkaitan dengan Flutter State Management Provider
+Rangkuman yang berkaitan dengan Flutter State Management Provider
+1. Provider adalah sebuah package yang digunakan untuk manajemen state pada Flutter. Package ini memungkinkan data yang dibutuhkan pada seluruh widget dapat diakses secara mudah tanpa harus melewati banyak lapisan widget.
+2. ChangeNotifier adalah class dasar dari Provider. Class ini digunakan untuk membuat class provider yang dapat memberikan notifikasi ketika terjadi perubahan pada data. Untuk mengimplementasikannya, kita cukup membuat class yang meng-extend dari ChangeNotifier dan menambahkan method untuk memperbarui data.
+3. MultiProvider adalah sebuah widget yang digunakan untuk menggabungkan beberapa provider menjadi satu. Dengan menggunakan MultiProvider, kita dapat memudahkan akses data dari berbagai provider yang berbeda pada seluruh widget.
+4. Consumer adalah sebuah widget yang digunakan untuk mengakses data dari provider. Widget ini akan rebuild ketika data yang dibutuhkan berubah. Untuk menggunakan Consumer, kita perlu memberikan sebuah builder method untuk mengakses data dari provider.
