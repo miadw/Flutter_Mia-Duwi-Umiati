@@ -1,1 +1,4 @@
-Bagian ini untuk rangkuman yang berkaitan dengan Unit Testing
+Rangkuman yang berkaitan dengan Unit Testing
+1. Unit Testing merupakan sebuah teknik testing yang bertujuan untuk menguji fungsi-fungsi kecil atau unit yang terdapat dalam sebuah aplikasi secara terpisah, untuk memastikan bahwa unit tersebut berfungsi dengan benar dan sesuai dengan spesifikasi yang telah ditetapkan.
+2. Dalam melakukan Unit Testing, developer perlu membuat test case yang terdiri dari input dan output yang diharapkan dari sebuah unit. Test case tersebut nantinya akan dijalankan secara otomatis oleh sebuah framework testing, dan akan menghasilkan laporan yang memudahkan developer untuk menemukan error dan debug lebih cepat.
+3. Keuntungan dari Unit Testing antara lain memastikan bahwa setiap unit bekerja sesuai dengan harapan, mencegah regresi (error yang muncul setelah dilakukan perubahan kode), meningkatkan kepercayaan diri dalam melakukan perubahan kode, serta mempercepat proses debugging dan maintenance aplikasi. Namun, Unit Testing juga membutuhkan biaya dan waktu yang cukup besar dalam pembuatannya.
