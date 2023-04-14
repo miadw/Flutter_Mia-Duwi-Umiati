@@ -1,4 +1,7 @@
 Rangkuman yang berkaitan dengan Unit Testing
+
 1.Unit testing dilakukan pada level kode yang terkecil, yaitu pada level fungsi dan metode. Hal ini memungkinkan untuk mendeteksi kesalahan atau bug pada kode sejak dini sebelum diterapkan pada level yang lebih tinggi.
+
 2. Dalam unit testing, setiap unit kode diisolasi dari unit lainnya sehingga tidak terjadi pengaruh dari unit lain pada hasil pengujian. Hal ini dilakukan dengan menggunakan mock object atau stub object sebagai pengganti objek atau komponen yang digunakan oleh unit yang sedang diuji.
+
 3. Di Flutter, unit testing dapat dilakukan menggunakan framework bawaan yaitu flutter_test. Framework ini menyediakan berbagai macam fungsi bawaan yang dapat digunakan untuk melakukan pengujian seperti expect, setUp, tearDown, testWidgets, dan lain-lain. Selain itu, Flutter juga menyediakan library tambahan seperti mockito yang dapat digunakan untuk membuat mock object.
