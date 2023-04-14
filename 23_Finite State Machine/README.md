@@ -1,1 +1,4 @@
-Bagian ini untuk rangkuman yang berkaitan dengan Finite State Machine
+Rangkuman yang berkaitan dengan Finite State Machine
+1. Finite State Machine (FSM) merupakan sebuah model matematis untuk mewakili sebuah sistem yang bisa berada dalam satu dari beberapa state atau keadaan, dan bisa berpindah dari satu state ke state lainnya berdasarkan input yang diterima.
+2. FSM terdiri dari beberapa elemen, yaitu state, transition, event, action, dan guard condition. State adalah keadaan sistem pada suatu waktu. Transition menggambarkan perpindahan dari satu state ke state lainnya. Event adalah input atau trigger yang membuat perpindahan state terjadi. Action adalah tindakan atau perubahan yang terjadi ketika terjadi perpindahan state. Guard condition adalah kondisi yang harus dipenuhi agar perpindahan state dapat terjadi.
+3. Penerapan FSM pada pengembangan perangkat lunak memungkinkan untuk memodelkan sistem dengan lebih jelas dan terstruktur, sehingga memudahkan dalam pengembangan dan pemeliharaan sistem. FSM juga dapat digunakan dalam pengujian dan debugging sistem untuk memastikan bahwa sistem berjalan dengan benar dan sesuai dengan spesifikasi yang telah ditentukan.
