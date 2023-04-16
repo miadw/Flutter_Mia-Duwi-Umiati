@@ -7,10 +7,12 @@ enum LoginPageState {
 }
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,12 +20,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: LoginPage(),
+      home: const LoginPage(),
     );
   }
 }
 
 class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
@@ -51,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
     _saveLoginInfo();
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => ContactsPage()),
+      MaterialPageRoute(builder: (context) => const ContactsPage()),
     );
   }
 
@@ -77,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
     await prefs.clear();
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => LoginPage()),
+      MaterialPageRoute(builder: (context) => const LoginPage()),
     );
   }
 
@@ -91,10 +95,10 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
+        title: const Text('Login'),
       ),
       body: _state == LoginPageState.loading
-          ? Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator())
           : Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
@@ -102,14 +106,14 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   TextFormField(
                     controller: _usernameController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Username',
                     ),
                   ),
                   TextFormField(
                     controller: _passwordController,
                     obscureText: true,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Password',
                     ),
                   ),
@@ -123,18 +127,18 @@ class _LoginPageState extends State<LoginPage> {
                           });
                         },
                       ),
-                      Text('Ingat saya'),
+                      const Text('Ingat saya'),
                     ],
                   ),
-                  SizedBox(height: 24),
+                  const SizedBox(height: 24),
                   ElevatedButton(
                     onPressed: _login,
-                    child: Text('Masuk'),
+                    child: const Text('Masuk'),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: _logout,
-                    child: Text('Keluar'),
+                    child: const Text('Keluar'),
                   ),
                 ],
               ),
@@ -227,7 +231,7 @@ class _ContactsPageState extends State<ContactsPage> {
               prefs.remove('username');
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => LoginPage()),
+                MaterialPageRoute(builder: (context) => const LoginPage()),
               );
             },
             icon: const Icon(Icons.logout),
@@ -242,9 +246,9 @@ class _ContactsPageState extends State<ContactsPage> {
             child: Column(
               children: [
                 const Icon(Icons.app_shortcut_outlined),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 const Text(
-                  'Selamat datang,',
+                  'Create New Contact',
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 24.0,
@@ -260,17 +264,17 @@ class _ContactsPageState extends State<ContactsPage> {
                       if (username != null && username.isNotEmpty) {
                         return Text(
                           username,
-                          style: TextStyle(fontSize: 16.0),
+                          style: const TextStyle(fontSize: 16.0),
                         );
                       }
                     }
                     return const Text(
-                      'pengguna!',
-                      style: TextStyle(fontSize: 16.0),
+                      'A dialog is a type modal window that appears in front of app content to provide cricital information, or prompt for a decision to be made',
+                      style: TextStyle(fontSize: 14.0),
                     );
                   },
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 const Divider(thickness: 2),
                 const SizedBox(height: 16.0),
                 TextFormField(
@@ -292,7 +296,7 @@ class _ContactsPageState extends State<ContactsPage> {
                   decoration: const InputDecoration(
                     fillColor: Color(0XFFE7E0EC),
                     labelText: 'Nomor HP',
-                    hintText: '0812 3456 7890',
+                    hintText: '+62...',
                     floatingLabelBehavior: FloatingLabelBehavior.always,
                     filled: true,
                   ),
@@ -321,7 +325,7 @@ class _ContactsPageState extends State<ContactsPage> {
                 Container(
                   padding: const EdgeInsets.symmetric(
                       vertical: 16.0, horizontal: 8.0),
-                  color: Color(0xFFFBFE),
+                  color: const Color(0xFFFBFE),
                   child: ListView.builder(
                     shrinkWrap: true,
                     itemCount: _contacts.length,
@@ -329,7 +333,7 @@ class _ContactsPageState extends State<ContactsPage> {
                       final item = _contacts[index];
                       return ListTile(
                         leading: CircleAvatar(
-                          backgroundColor: Color(0XFFEADDFF),
+                          backgroundColor: const Color(0XFFEADDFF),
                           foregroundColor: Colors.black,
                           child: Text(item['nama']![0].toUpperCase()),
                         ),
